@@ -4,8 +4,6 @@ https://www.baeldung.com/docker-layers-spring-boot
 
 This XML file is a custom layering configuration for building an optimized Docker image with Spring Boot. Its main purpose is to give you fine-grained control over how your application is separated into different layers inside a Docker image. This works together with the "layertools" feature and the 3-stage `Dockerfile` we've been using. The goal is to maximize Docker's layer caching and make your builds much faster.
 
-Let's break down what each section is doing.
-
 ## 1. The `<dependencies>` Section
 This section defines how to handle all the third-party libraries your project depends on.
 
