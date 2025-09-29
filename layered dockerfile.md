@@ -1,3 +1,4 @@
+https://docs.docker.com/get-started/docker-concepts/building-images/multi-stage-builds/
 https://www.baeldung.com/docker-layers-spring-boot
 ````markdown
 # Understanding Spring Boot's layers.xml for Optimized Docker Builds
