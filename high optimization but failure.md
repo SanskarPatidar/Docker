@@ -10,7 +10,7 @@ The only way to satisfy Maven's requirement and keep the Dockerfile generic is t
 This provides the complete project to Maven. While it seems less optimized for caching during the build, it is the only
 robust way to guarantee the build succeeds, and it still results in the small, layered final image you want.
 ```
-```
+```docker
 # This Dockerfile accepts the module directory name as an argument
 ARG MODULE_DIR
 # Stage 1: The "Builder" - Compiles the application and creates the layered JAR
