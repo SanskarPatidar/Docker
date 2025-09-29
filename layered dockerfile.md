@@ -2,6 +2,19 @@ https://www.baeldung.com/docker-layers-spring-boot
 ````markdown
 # Understanding Spring Boot's layers.xml for Optimized Docker Builds
 
+test/
+├── pom.xml  (Parent POM)
+├── consumer/
+│   ├── src/main/resources/
+│   │   ├── application.yml
+│   │   └── layers.xml   <-- HERE
+│   └── pom.xml
+└── producer/
+    ├── src/main/resources/
+    │   ├── application.yml
+    │   └── layers.xml   <-- AND HERE
+    └── pom.xml
+
 This XML file is a custom layering configuration for building an optimized Docker image with Spring Boot. Its main purpose is to give you fine-grained control over how your application is separated into different layers inside a Docker image. This works together with the "layertools" feature and the 3-stage `Dockerfile` we've been using. The goal is to maximize Docker's layer caching and make your builds much faster.
 
 ## 1. The `<dependencies>` Section
