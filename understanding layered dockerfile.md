@@ -90,5 +90,4 @@ Docker builds images in layers. If a layer changes, every subsequent layer must 
 
 **In summary:** this `layers.xml` file is a set of instructions for the `java -Djarmode=layertools -jar app.jar extract` command. It tells the tool how to intelligently unpack your JAR into the directories that your 3-stage `Dockerfile` then copies over, layer by layer, to create a highly optimized and fast-rebuilding container image.
 
-```
-```
+
