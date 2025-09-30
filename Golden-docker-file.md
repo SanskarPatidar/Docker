@@ -1,6 +1,6 @@
 Name of my root module: test
 Name of sub-modules: producer, consumer
-``` Docker
+``` docker
 # NOTE: This Dockerfile is designed to be placed in each module of root multi-module project.
 # NOTE: We could go from generic to specific Dockerfile to further increase build time of image
 
