@@ -68,6 +68,7 @@ COPY --from=EXTRACTOR /extracted/snapshot-dependencies/ ./
 COPY --from=EXTRACTOR /extracted/application/ ./
 
 # Container listens on port 8080
+# server.port property overrides this, so no need to remove it, treated as hint
 EXPOSE 8080
 # Added .launch for spring boot version 3.2+, for lesser versions remove .launch
 ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
