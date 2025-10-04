@@ -3,7 +3,7 @@ Name of my root module: test
 Name of sub-modules: producer, consumer
 ``` Dockerfile
 # NOTE: This Dockerfile is designed to be placed in each module of root multi-module project.
-# NOTE: We could go from generic to specific Dockerfile to further increase build time of image
+# NOTE: We could go from generic to specific Dockerfile to further decrease build time of image
 
 # Docker stages work like this:
 # Each stage starts with a clean filesystem from its base image
